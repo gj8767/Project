@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+
+            <div class="left-text">
+                <h1>
+                    Hey! Welcome to New Mathamathics Software...
+                </h1>
+            </div>
+            <footer>
+                <div class="bottom">
+                    <p><a href="https://www.cuemath.com/numbers/round-to-the-nearest-thousand/">Help</a></p>
+                    <span>/</span>
+                    <p><a href="https://www.linkedin.com/in/gajanan-jadhav-999266228/">Contact</a></p><span>/</span>
+                    <p><a href="#">About</a></p>
+                </div>
+            </footer>
+        </div>
+        <div class="right">
+            <div class="right-heading">
+                <h6>
+                    Nearest Number of Calculator...!
+                </h6>
+
+                <div class="mains">
+                    <div class="main-no">
+                        <label for="no"> NUMBER :- </label>
+                        <input type="text" id="no">
+                    </div>
+                    <div class="main-num">
+                        <label for="num"> NEAREST :- </label>
+                        <select name="number" id="num">
+                            <option value="10">Nearest of 10</option>
+                            <option value="100">Nearest of 100</option>
+                            <option value="1000">Nearest of 1000</option>
+                            <option value="10000">Nearest of 10000</option>
+                            <option value="100000">Nearest of 100000</option>
+                            <option value="1000000">Nearest of 1000000</option>
+                        </select>
+                    </div>
+
+                    <div class="main-botton">
+                        <button class="btn" onclick="re()">Enter</button>
+                    </div>
+                    <div class="main-result">
+                        <label for="result"> RESULT :- </label>
+                        <input type="text" id="result">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        function re() {
+            let num = document.getElementById("no").value;
+            let nearest = document.getElementById("num").value;
+            let result = document.getElementById("result");
+            if (num < nearest) {
+                result.value = nearest;
+            } else {
+                result.value = Math.round(num / nearest) * nearest;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

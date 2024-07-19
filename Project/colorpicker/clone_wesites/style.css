@@ -1,0 +1,44 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Style the navbar */
+.navbar {
+    height: 80px;
+    background-color: #1569ae;
+    padding: 10px 0;
+}
+
+/* Center align the nav list */
+.nav-list {
+    list-style-type: none;
+    margin-left: 120px;
+    color: black;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style the navigation links */
+.nav-list li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-list li a {
+    color: #090202;
+    text-decoration: none;
+    padding: 5px 1px;
+}
+
+.nav-list li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}

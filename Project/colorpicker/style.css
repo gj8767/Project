@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    height: 2.5rem;
+    width: fit-content;
+    border-radius: 1rem;
+    color: black;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.box {
+    height: 100px;
+    width: 400px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}

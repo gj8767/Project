@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>Guessing Game</h1>
+        <div class="range">
+            <h1>Random Number Generator</h1>
+            <div class="inputs">
+                <label for="start">Start:</label>
+                <input type="text" id="start" placeholder="Enter start number">
+                <label for="end">End:</label>
+                <input type="text" id="end" placeholder="Enter end number">
+            </div>
+            <button id="generateBtn">Generate Random Number</button>
+            <!-- <p id="result"></p> -->
+        </div>
+        <div class="guess">
+            <input id="main" type="text" placeholder="Guess No">
+            <button id="btn_guess">Guess</button>
+        </div>
+        <div class="paragraph">
+            <p id="para">You have to start the game</p>
+        </div>
+        <div class="btns">
+            <button id="green" style="background-color: green;">Play Game</button>
+            <button id="red" style="background-color: red;">Exit Game</button>
+        </div>
+    </div>
+    <script src="guessinggame.js"></script>
+</body>
+
+</html>

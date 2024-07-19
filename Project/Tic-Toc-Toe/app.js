@@ -24,16 +24,16 @@ const resetGame = () => {
 
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
-        console.log("click the button");
+        // console.log("click the button");
         if(turn) {
             box.innerText = "O";
             turn = false;
-            box.classList.add("color");
+            box.style.color = " red";
             
         }else{
             box.innerText = "X";
             turn = true;
-            box.classList.add("c");
+            box.style.color = "black";
         }
         box.disabled = true;
         checkWinner();
@@ -68,7 +68,7 @@ const checkWinner = () => {
 
         if(pos1val != "" && pos2val != "" && pos3val != "") {
             if(pos1val === pos2val && pos2val === pos3val){
-                console.log("Winner", pos1val);
+                // console.log("Winner", pos1val);
                 showWinner(pos1val);
             }
         }

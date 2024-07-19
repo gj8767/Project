@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+}
+
+.left {
+    width: 550px;
+    background-color: #ffffff;
+    padding: 60px;
+}
+
+.img-logo {
+    width: 180px;
+    height: 100px;
+}
+
+.img-logo img {
+    width: 8rem;
+}
+
+.body-text {
+    margin-top: 1.8rem;
+    line-height: 0.6rem;
+}
+
+.body-texg span h1 {
+    font-size: 40px;
+    line-break: 0.7rem;
+    font-weight: 600;
+    color: #0E141E;
+}
+
+.minutes {
+    display: flex;
+    margin-top: 3rem;
+    line-height: 0.2rem;
+    gap: 2rem;
+}
+
+.minutes p {
+    font-size: small;
+    opacity: 0.8;
+}
+
+.minutes h6 {
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.footer {
+    margin-top: 6.5rem;
+    font-size: 13px;
+    gap: 0.5rem;
+    line-height: 1rem;
+}
+
+.footer a {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #738f93;
+    color: #1c5ba9;
+    text-decoration: underline dashed;
+}
+
+.footer_dived {
+    opacity: 0.7;
+}
+
+.right {
+    width: 100%;
+    height: 100vh;
+    flex: 1;
+    background-color: #f3f7f7;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.li a {
+    color: #075C8E;
+}
+
+.li li {
+    font-size: 14px;
+    margin: 0px, 0px 15px;
+    width: 550px;
+    height: 38px;
+    line-height: 1.2rem;
+}
+
+.inst {
+    margin: 0px 31.5px 0px 0px;
+    padding: 240px 60px 40px;
+}
+
+.botton {
+    padding-left: 60px;
+}
+
+.b {
+    width: 6rem;
+    height: 2.3rem;
+    background-color: green;
+    color: #ffffff;
+    border: 1px solid green;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+.bt {
+    width: 10rem;
+    height: 2.3rem;
+    color: #068932;
+    border: 1px solid green;
+    font-weight: 600;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.mainbody {
+    height: 589px;
+    width: 720px;
+    margin: 0px 31.5px 0px 0px;
+    padding: 240px 60px 40px;
+}
+
+.mainbody-main h2 {
+    color: #39424E;
+    font-size: 40px;
+    margin: 0px 0px 10px;
+
+
+}
+
+.stable span {
+    color: #39424E;
+    font: 14px;
+    padding: 10px 0px 15px;
+}
+
+.headers {
+    background-color: #ffffff;
+    /* padding: 0px 20px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header-column {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.ellipse {
+    color: #738f93;
+    font-size: 14px;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #f3f7f7;
+    width: 100%;
+}
+
+.ellipses {
+    font-size: 14x;
+    color: #39424E;
+    padding: 14px 0px;
+}
+
+.bn {
+    margin-top: 3rem;
+}
+
+form {
+    width: 720px;
+    height: fit-content;
+    margin: 0px 31.5px 0px 0px;
+    padding: 240px 60px 40px;
+}
+
+form .last-form p {
+    width: 600px;
+    height: 59.05px;
+    font-size: 13px;
+    color: #39424E;
+    padding: 10px 0px 25px;
+}
+
+.label {
+    width: 600px;
+    height: 71px;
+    padding: 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.label label {
+    width: 600px;
+    height: 21px;
+    font-size: 14px;
+    color: #39424E;
+    padding: 0px 0px 10px;
+}
+
+#emai {
+    box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.1);
+    border-width: 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-bottom: 1px solid #576871;
+    border: none;
+}
+
+.mb-3 label {
+    &::after {
+        margin-left: 3px;
+        color: red;
+        content: "*";
+    }
+}
+
+
+.check h3 {
+    width: 600px;
+    font-size: 14px;
+    margin: 14px 0px;
+    color: #39424E;
+
+    &::after {
+        margin-left: 3px;
+        color: red;
+        content: "*";
+    }
+}
+
+/* .check h3 ::after {
+    margin-left: 3px;
+    color: red;
+    content: "*";
+} */
+
+.check label {
+    display: flex;
+}
+
+.check .form-check {
+    font-size: 14px;
+    color: #39424E;
+    margin: 15px 0px 0px 0px;
+    width: 561px;
+}
+
+.mb-3 label {
+    font-size: 14px;
+    color: #39424E;
+}
+
+.form-check input {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.form-check label {
+    margin-left: 2rem;
+}
+
+.form-check a {
+    color: #11639C;
+}
